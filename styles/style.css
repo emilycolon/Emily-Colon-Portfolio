@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  background-image: url('../images/full-bloom.png');
+  font-family: 'Permanent Marker', cursive;
+  min-height: 95%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr auto;
+}
+
+.title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 4em;
+  color: #39a2ae;
+  letter-spacing: 0.25em;
+}
+
+.picture {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 1em 0;
+}
+
+.me {
+  height: 180px;
+  width: 180px;
+  border: 4px solid #39a2ae;
+  border-radius: 100%;
+}
+
+.intro {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul.detail li {
+  margin: 0 0 1em -1em;
+  color: #15771d;
+  font-family: 'Muli', sans-serif;
+}
+
+p {
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
+  padding: 0 10em;
+}
+
+footer {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+ul.nav li {
+  display: inline-block;
+  margin: 0 2em;
+  color: #270722;
+}
+
+a {
+  color: #051c1b;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #051c1b;
+}
+
+a:hover {
+  color: #39a2ae;
+}
