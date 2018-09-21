@@ -75,6 +75,11 @@ ul.nav li {
   color: #270722;
 }
 
+.fa-github,
+.fa-at {
+  color: #15771d;
+}
+
 a {
   color: #051c1b;
   text-decoration: none;
@@ -84,6 +89,8 @@ a:visited {
   color: #051c1b;
 }
 
-a:hover {
+a:hover,
+.fa-github:hover,
+.fa-at:hover {
   color: #39a2ae;
 }
