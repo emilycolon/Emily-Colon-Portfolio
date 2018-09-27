@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-image: url('../images/full-bloom.png');
   font-family: 'Permanent Marker', cursive;
-  min-height: 95%;
+  max-height: 95%;
   display: grid;
   grid-template-rows: 1fr 1fr auto;
 }
@@ -15,6 +15,22 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   padding: 1em 0;
+}
+
+.home-title {
+  display: block;
+}
+
+.about-title {
+  display: none;
+}
+
+.contact-title {
+  display: none;
+}
+
+.projects-title {
+  display: none;
 }
 
 h1 {
@@ -35,10 +51,30 @@ h1 {
 }
 
 main {
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   width: 75%;
   margin: 0 auto;
+}
+
+.home {
+  display: block;
+}
+
+.about {
+  display: none;
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
+}
+
+.contact {
+  display: none;
+  margin: 2em 2em;
+}
+
+.projects {
+  display: none;
 }
 
 ul {
@@ -56,19 +92,9 @@ ul.detail li {
   font-family: 'Muli', sans-serif;
 }
 
-p {
-  text-align: left;
-  font-family: 'Muli', sans-serif;
-  font-size: 1em;
-}
-
-.contact {
-  margin: 2em 2em;
-}
-
 footer {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 ul.nav li {
