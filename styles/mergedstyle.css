@@ -5,7 +5,7 @@ html {
 body {
   text-align: center;
   background-image: url('../images/full-bloom.png');
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Walter Turncoat', cursive;
   max-height: 95%;
   display: grid;
   grid-template-rows: 1fr 1fr auto;
@@ -17,19 +17,19 @@ header {
   padding: 1em 0;
 }
 
-.home-title {
+.home {
   display: block;
 }
 
-.about-title {
+.about {
   display: none;
 }
 
-.contact-title {
+.contact {
   display: none;
 }
 
-.projects-title {
+.projects {
   display: none;
 }
 
@@ -57,26 +57,6 @@ main {
   margin: 0 auto;
 }
 
-.home {
-  display: block;
-}
-
-.about {
-  display: none;
-  text-align: left;
-  font-family: 'Muli', sans-serif;
-  font-size: 1em;
-}
-
-.contact {
-  display: none;
-  margin: 2em 2em;
-}
-
-.projects {
-  display: none;
-}
-
 ul {
   list-style: none;
   text-align: center;
@@ -92,6 +72,25 @@ ul.detail li {
   font-family: 'Muli', sans-serif;
 }
 
+p {
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
+}
+
+.links {
+  margin: 2em 0;
+}
+
+.contacts {
+  margin: 0 2em;
+}
+
+.fa-github,
+.fa-at {
+  color: #15771d;
+}
+
 footer {
   grid-row-start: 3;
   grid-row-end: 4;
@@ -101,11 +100,6 @@ ul.nav li {
   display: inline-block;
   margin: 0 2em;
   color: #270722;
-}
-
-.fa-github,
-.fa-at {
-  color: #15771d;
 }
 
 a {
