@@ -4,7 +4,6 @@ html {
 
 body {
   text-align: center;
-  /* font-family: 'Montserrat', sans-serif; */
   background-image: url('../images/full-bloom.png');
   font-family: 'Permanent Marker', cursive;
   min-height: 95%;
@@ -20,7 +19,7 @@ body {
 
 h1 {
   font-size: 4em;
-  color: #39a2ae;
+  color: #15771d;
   letter-spacing: 0.25em;
 }
 
@@ -40,6 +39,8 @@ h1 {
 .intro {
   grid-row-start: 3;
   grid-row-end: 4;
+  width: 75%;
+  margin: 0 auto;
 }
 
 ul {
@@ -61,7 +62,10 @@ p {
   text-align: left;
   font-family: 'Muli', sans-serif;
   font-size: 1em;
-  padding: 0 10em;
+}
+
+.contact {
+  margin: 2em 2em;
 }
 
 footer {
@@ -92,5 +96,5 @@ a:visited {
 a:hover,
 .fa-github:hover,
 .fa-at:hover {
-  color: #39a2ae;
+  color: #15771d;
 }
