@@ -8,27 +8,25 @@ body {
   max-height: 95%;
   display: grid;
   grid-template-rows: 1fr 1fr auto;
+  grid-template-columns: auto;
 }
 
 .background {
   height: 800px;
-}
-
-.background::after {
-  content: '';
-  background: url('../images/mandala9.jpg');
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: url('../images/mandala1.jpg') no-repeat center center;
   opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
   z-index: -1;
 }
 
 header {
   grid-row-start: 1;
   grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
   padding: 1em 0;
 }
 
@@ -68,6 +66,8 @@ h1 {
 main {
   grid-row-start: 2;
   grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   width: 75%;
   margin: 0 auto;
 }
@@ -109,6 +109,8 @@ p {
 footer {
   grid-row-start: 3;
   grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
   display: block;
 }
 
