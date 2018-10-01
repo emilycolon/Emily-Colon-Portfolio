@@ -1,22 +1,28 @@
+let clicks = 0;
+let currentPicNumber;
+
 const getCurrentBackground = () => {
-  let backgroundStyle = $('.background').css('background');
-  let splitBackgroundArray = backgroundStyle.split(') ');
-  let backgroundUrl = splitBackgroundArray[1];
-  let splitUrl = backgroundUrl.split('/');
-  let currentPicture = splitUrl[splitUrl.length - 1];
-  let currentPicArray = currentPicture.split('');
-  let currentPicNumber = currentPicArray[7];
+  let splitBackgroundArray = $('.background')
+    .css('background')
+    .split('"');
+  let splitUrl = splitBackgroundArray[1].split('/');
+  let currentPicture = splitUrl[splitUrl.length - 1].split('');
+  if (clicks < 11) {
+    currentPicNumber = currentPicture[7];
+  } else {
+    currentPicNumber = currentPicture[7] + currentPicture[8];
+  }
   changeBackground(currentPicNumber);
 };
 
 const changeBackground = currentPicNumber => {
-  if (currentPicNumber < 9) {
+  if (currentPicNumber < 16) {
     currentPicNumber = parseInt(currentPicNumber) + 1;
     currentPicNumber = currentPicNumber.toString();
   } else {
-    currentPicNumber = '1';
+    currentPicNumber = '0';
+    clicks = 0;
   }
-
   $('.background').css(
     'background',
     `url("./images/mandala${currentPicNumber}.jpg") no-repeat center center`
@@ -25,6 +31,7 @@ const changeBackground = currentPicNumber => {
 
 $(document).ready(() => {
   $(window).click(() => {
+    clicks++;
     getCurrentBackground();
   });
 
