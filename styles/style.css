@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: #b2d6b6;
   text-align: center;
   font-family: 'Walter Turncoat', cursive;
   max-height: 95%;
@@ -17,7 +18,7 @@ body {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
-  background: url('../images/mandala0.jpg') no-repeat center center;
+  background: url('../images/mandala0.png') no-repeat center center;
   opacity: 0.5;
   z-index: -1;
 }
@@ -32,8 +33,6 @@ header {
 
 .home {
   display: block;
-  font-weight: bolder;
-  text-shadow: -1px 2px 2px black;
 }
 
 .about {
@@ -52,6 +51,7 @@ h1 {
   font-size: 4em;
   color: #15771d;
   letter-spacing: 0.25em;
+  text-shadow: -1px 2px 2px #000000;
 }
 
 .picture {
@@ -85,12 +85,24 @@ li {
 
 ul.detail li {
   margin: 0 0 1em -1em;
-  color: #15771d;
+  color: #000;
   font-family: 'Muli', sans-serif;
+  font-weight: bolder;
+  text-shadow: -1px 2px 2px #2b2b2b;
+}
+
+div.transbox {
+  margin: 0 5%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.75;
 }
 
 p {
   text-align: left;
+  margin: 5%;
+  font-weight: bold;
+  color: #000;
   font-family: 'Muli', sans-serif;
   font-size: 1em;
 }
@@ -103,9 +115,13 @@ p {
   margin: 0 2em;
 }
 
+.contacts:hover {
+  text-shadow: -1px 2px 2px #2b2b2b;
+}
+
 .fa-github,
 .fa-at {
-  color: #15771d;
+  color: #000;
 }
 
 footer {
@@ -123,7 +139,7 @@ ul.nav li {
 }
 
 a {
-  color: #051c1b;
+  color: #000;
   text-decoration: none;
 }
 
@@ -131,8 +147,6 @@ a:visited {
   color: #051c1b;
 }
 
-a:hover,
-.fa-github:hover,
-.fa-at:hover {
-  color: #15771d;
+a:hover {
+  text-shadow: -1px 2px 2px #2b2b2b;
 }

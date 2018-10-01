@@ -25,7 +25,7 @@ const changeBackground = currentPicNumber => {
   }
   $('.background').css(
     'background',
-    `url("./images/mandala${currentPicNumber}.jpg") no-repeat center center`
+    `url("./images/mandala${currentPicNumber}.png") no-repeat center center`
   );
 };
 
