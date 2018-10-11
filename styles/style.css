@@ -18,9 +18,9 @@ body {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
-  background: url('../images/mandala0.png') no-repeat center center;
+  background: url('../images/backgrounds/mandala0.png') no-repeat center center;
   opacity: 0.5;
-  z-index: -1;
+  z-index: -2;
 }
 
 header {
@@ -109,6 +109,79 @@ p {
   color: #000;
   font-family: 'Muli', sans-serif;
   font-size: 1em;
+}
+
+div.transbox-projects {
+  margin: 0 10%;
+  padding: 5%;
+  background-color: #fff;
+  border: 1px solid #000;
+  opacity: 0.95;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+}
+
+.item {
+  margin: 0 0 2.5% 10%;
+  padding: 0 0 2.5% 10%;
+  height: 250px;
+  width: 250px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+#project1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url('../images/projects/rainbowunicorn.png');
+}
+
+#project2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-image: url('../images/projects/trivia.png');
+}
+
+#project3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url('../images/projects/musicfav.png');
+}
+
+#project4 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-image: url('../images/projects/hangman.png');
+}
+
+#project5 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url('../images/projects/jframehangman.png');
+}
+
+div.transbox-project-detail {
+  margin: 10% 10% 5% 3%;
+  background-color: #fff;
+  border: 1px solid #000;
+  opacity: 0.75;
+}
+
+h2 {
+  font-family: 'Muli', sans-serif;
 }
 
 footer {
